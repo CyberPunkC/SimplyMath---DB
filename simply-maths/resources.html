@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0070C0">
+<title>Resources · Simply Maths</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-soft">
+<header class="app-header shadow-sm sticky-top bg-white/90 backdrop-blur">
+    <nav class="navbar navbar-expand-lg container py-2">
+        <a class="navbar-brand fw-black d-flex align-items-center gap-2" href="index.html">
+            <span class="logo-blob" aria-hidden="true"></span>
+            <span>Simply <span class="text-gradient">Maths</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="everyday.html">Everyday Life</a></li>
+                <li class="nav-item"><a class="nav-link" href="tech.html">Tech & Fields</a></li>
+                <li class="nav-item"><a class="nav-link" href="play.html">Play & Learn</a></li>
+                <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main id="main">
+<section class="section-hero soft-top py-6">
+  <div class="container">
+    <h1 class="display-6 fw-extrabold">Resources</h1>
+    <p class="lead text-700">Carefully curated links, glossary, and ways to reach us.</p>
+  </div>
+</section>
+<section class="container py-6">
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <h2 id="links" class="section-title fs-3">Helpful Links</h2>
+      <ul class="list-icons">
+        <li><span class="icon-bullet"></span>Free learning apps</li>
+        <li><span class="icon-bullet"></span>Great YouTube channels</li>
+        <li><span class="icon-bullet"></span>Deep-dive articles</li>
+      </ul>
+      <h2 id="glossary" class="section-title fs-3 mt-4">Glossary</h2>
+      <dl class="row small">
+        <dt class="col-sm-3">Mean</dt><dd class="col-sm-9">Average of values.</dd>
+        <dt class="col-sm-3">Median</dt><dd class="col-sm-9">Middle value when sorted.</dd>
+        <dt class="col-sm-3">Mode</dt><dd class="col-sm-9">Most frequent value.</dd>
+      </dl>
+      <h2 id="privacy" class="section-title fs-3 mt-4">Privacy Policy</h2>
+      <p class="small text-700">We use no trackers beyond essential analytics. You can request deletion of contact data at any time.</p>
+      <h2 id="disclaimer" class="section-title fs-3 mt-4">Disclaimer</h2>
+      <p class="small text-700">Educational content only. No warranties. Always verify calculations for critical decisions.</p>
+    </div>
+    <div class="col-lg-4">
+      <div id="contact" class="card border-0 shadow-soft">
+        <div class="card-body">
+          <h5 class="fw-bold">Contact</h5>
+          <form class="row g-2 needs-validation" novalidate>
+            <div class="col-12">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="col-12 d-grid">
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="app-footer mt-5 pt-5 pb-4 border-top border-200">
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <h5 class="fw-bold">Simply Maths</h5>
+            <p class="text-700 small">Making numbers feel human. Learn, play, and see maths everywhere.</p>
+        </div>
+        <div class="col-6 col-md-2">
+            <h6 class="text-800">Explore</h6>
+            <ul class="list-unstyled small mb-0">
+                <li><a class="link-blue" href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md-3">
+            <h6 class="text-800">Legal</h6>
+            <ul class="list-unstyled small mb-0">
+                <li><a class="link-blue" href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h6 class="text-800">Newsletter</h6>
+            <form class="row g-2" action="#" method="post">
+                <div class="col-8"><input class="form-control form-control-sm" placeholder="Email" type="email" required></div>
+                <div class="col-4 d-grid"><button class="btn btn-primary btn-sm">Join</button></div>
+            </form>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mt-4 small text-700">
+        <span>© <span id="year"></span> Simply Maths. All rights reserved.</span>
+        <span class="opacity-75">Made with ♥ and a lot of π.</span>
+    </div>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
+</body>
+</html>

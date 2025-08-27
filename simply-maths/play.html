@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0070C0">
+<title>Play & Learn · Simply Maths</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-soft">
+<header class="app-header shadow-sm sticky-top bg-white/90 backdrop-blur">
+    <nav class="navbar navbar-expand-lg container py-2">
+        <a class="navbar-brand fw-black d-flex align-items-center gap-2" href="index.html">
+            <span class="logo-blob" aria-hidden="true"></span>
+            <span>Simply <span class="text-gradient">Maths</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="everyday.html">Everyday Life</a></li>
+                <li class="nav-item"><a class="nav-link" href="tech.html">Tech & Fields</a></li>
+                <li class="nav-item"><a class="nav-link active" href="play.html">Play & Learn</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main id="main">
+<section class="section-hero mesh-top py-6">
+  <div class="container">
+    <h1 class="display-6 fw-extrabold">Play & Learn</h1>
+    <p class="lead text-700">Puzzles, riddles, and printable challenges. Learn by doing.</p>
+  </div>
+</section>
+<section class="container py-6">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div class="card h-100 border-0 shadow-soft">
+        <div class="card-body">
+          <h5 class="fw-bold">Riddle</h5>
+          <p>I am an odd number. Take away one letter and I become even. What am I?</p>
+          <details><summary class="link-blue">Reveal answer</summary><p>Seven.</p></details>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100 border-0 shadow-soft">
+        <div class="card-body">
+          <h5 class="fw-bold">Printable Puzzle</h5>
+          <p>Coming soon: a PDF pack of fraction and percentage drills.</p>
+          <a class="btn btn-outline-primary btn-sm" href="#">Notify me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="app-footer mt-5 pt-5 pb-4 border-top border-200">
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <h5 class="fw-bold">Simply Maths</h5>
+            <p class="text-700 small">Making numbers feel human. Learn, play, and see maths everywhere.</p>
+        </div>
+        <div class="col-6 col-md-2">
+            <h6 class="text-800">Explore</h6>
+            <ul class="list-unstyled small mb-0">
+                <li><a class="link-blue" href="index.html">Home</a></li>
+                <li><a class="link-blue" href="play.html">Play</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md-3">
+            <h6 class="text-800">Legal</h6>
+            <ul class="list-unstyled small mb-0">
+                <li><a class="link-blue" href="resources.html#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h6 class="text-800">Newsletter</h6>
+            <form class="row g-2" action="#" method="post">
+                <div class="col-8"><input class="form-control form-control-sm" placeholder="Email" type="email" required></div>
+                <div class="col-4 d-grid"><button class="btn btn-primary btn-sm">Join</button></div>
+            </form>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mt-4 small text-700">
+        <span>© <span id="year"></span> Simply Maths. All rights reserved.</span>
+        <span class="opacity-75">Made with ♥ and a lot of π.</span>
+    </div>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
